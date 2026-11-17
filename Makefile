@@ -1,0 +1,7 @@
+CC ?= gcc
+
+mygitpackage: mygitpackage.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<
+
+clean:
+	rm -f mygitpackage
